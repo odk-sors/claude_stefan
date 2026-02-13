@@ -1,0 +1,29 @@
+---
+const today = new Date();
+---
+
+<footer>
+	<div class="footer-content">
+		<p>&copy; {today.getFullYear()} AI Tech Lab. All rights reserved.</p>
+		<p class="disclaimer">
+			当サイトはAmazonアソシエイト・プログラムに参加しています。
+		</p>
+	</div>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 4em 1em;
+		background: rgb(var(--gray-dark));
+		color: rgb(var(--gray-light));
+		text-align: center;
+	}
+	.footer-content {
+		max-width: 960px;
+		margin: 0 auto;
+	}
+	.disclaimer {
+		font-size: 0.8em;
+		color: rgb(var(--gray));
+		margin-top: 0.5em;
+	}
+</style>

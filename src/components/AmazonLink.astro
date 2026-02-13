@@ -1,0 +1,91 @@
+---
+// Amazonアソシエイトリンクコンポーネント
+// YOUR_ASSOCIATE_IDを実際のアソシエイトIDに置き換えてください
+interface Props {
+	title: string;
+	asin: string;
+	description?: string;
+	imageUrl?: string;
+}
+const { title, asin, description = '', imageUrl } = Astro.props;
+const affiliateTag = 'YOUR_ASSOCIATE_ID';
+const productUrl = `https://www.amazon.co.jp/dp/${asin}?tag=${affiliateTag}`;
+---
+
+<div class="amazon-card">
+	{imageUrl && (
+		<a href={productUrl} target="_blank" rel="nofollow noopener" class="amazon-image">
+			<img src={imageUrl} alt={title} loading="lazy" />
+		</a>
+	)}
+	<div class="amazon-info">
+		<h4><a href={productUrl} target="_blank" rel="nofollow noopener">{title}</a></h4>
+		{description && <p>{description}</p>}
+		<a href={productUrl} target="_blank" rel="nofollow noopener" class="amazon-button">
+			Amazonで見る
+		</a>
+	</div>
+</div>
+<style>
+	.amazon-card {
+		display: flex;
+		gap: 1em;
+		padding: 1.5em;
+		border: 1px solid rgb(var(--gray-light));
+		border-radius: 12px;
+		margin: 1.5em 0;
+		background: white;
+		transition: box-shadow 0.2s;
+	}
+	.amazon-card:hover {
+		box-shadow: var(--box-shadow);
+	}
+	.amazon-image {
+		flex-shrink: 0;
+		width: 120px;
+	}
+	.amazon-image img {
+		width: 100%;
+		object-fit: contain;
+	}
+	.amazon-info {
+		flex: 1;
+	}
+	.amazon-info h4 {
+		margin: 0 0 0.5em;
+		font-size: 1.1em;
+	}
+	.amazon-info h4 a {
+		color: rgb(var(--black));
+		text-decoration: none;
+	}
+	.amazon-info h4 a:hover {
+		color: var(--accent);
+	}
+	.amazon-info p {
+		font-size: 0.9em;
+		color: rgb(var(--gray));
+		margin: 0 0 1em;
+	}
+	.amazon-button {
+		display: inline-block;
+		padding: 0.5em 1.5em;
+		background: #ff9900;
+		color: white !important;
+		border-radius: 6px;
+		font-weight: 700;
+		font-size: 0.9em;
+		text-decoration: none !important;
+	}
+	.amazon-button:hover {
+		background: #e68a00;
+	}
+	@media (max-width: 720px) {
+		.amazon-card {
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		.amazon-image { width: 150px; }
+	}
+</style>

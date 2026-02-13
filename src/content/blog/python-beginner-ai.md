@@ -1,0 +1,114 @@
+---
+title: '【完全初心者向け】PythonでAIを始める方法｜環境構築からHello Worldまで'
+description: 'プログラミング未経験者でもわかるPython入門。AI開発に必要な環境構築からHello Worldまで、ステップバイステップで解説します。'
+pubDate: '2026-02-10'
+heroImage: '../../assets/thumb-python-ai.svg'
+---
+
+「AIを自分で作ってみたい。でもプログラミングは未経験...」
+
+そんな方のために、**完全初心者向け**のPython入門ガイドを用意しました。
+
+## なぜPythonなの？
+
+AI開発でPythonが選ばれる理由はシンプルです：
+
+1. **文法がシンプル** - 英語に近い書き方で読みやすい
+2. **AI関連のライブラリが豊富** - TensorFlow、PyTorchなど
+3. **コミュニティが大きい** - 困ったときに情報が見つかりやすい
+4. **求人が多い** - エンジニアとしてのキャリアにも有利
+
+## Step 1: Pythonのインストール
+
+### macOSの場合
+
+ターミナルを開いて以下を実行：
+
+```bash
+# Homebrewをインストール（未導入の場合）
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Pythonをインストール
+brew install python
+```
+
+### Windowsの場合
+
+1. [Python公式サイト](https://python.org)にアクセス
+2. 「Download Python」をクリック
+3. インストーラーを実行（**「Add to PATH」に必ずチェック**）
+
+## Step 2: 動作確認
+
+ターミナル（コマンドプロンプト）で以下を実行：
+
+```bash
+python3 --version
+```
+
+`Python 3.x.x` と表示されればOKです。
+
+## Step 3: Hello World
+
+最初のプログラムを書いてみましょう。
+
+```python
+print("Hello, World!")
+print("AIの世界へようこそ！")
+```
+
+ターミナルで実行：
+
+```bash
+python3 hello.py
+```
+
+## Step 4: AIライブラリを体験
+
+簡単なAI体験をしてみましょう。OpenAIのAPIを使います。
+
+```bash
+pip install openai
+```
+
+```python
+from openai import OpenAI
+
+client = OpenAI(api_key="YOUR_API_KEY")
+
+response = client.chat.completions.create(
+    model="gpt-4o-mini",
+    messages=[
+        {"role": "user", "content": "こんにちは！自己紹介してください"}
+    ]
+)
+
+print(response.choices[0].message.content)
+```
+
+## Step 5: 次のステップ
+
+基本を覚えたら、次はこんなことに挑戦してみましょう：
+
+- **データ分析** - pandasとmatplotlibを学ぶ
+- **機械学習** - scikit-learnで基本を学ぶ
+- **ディープラーニング** - TensorFlowやPyTorchに挑戦
+- **自然言語処理** - テキストの分析や生成
+
+## おすすめの学習リソース
+
+### 無料
+- Python公式チュートリアル
+- Google Colab（ブラウザでPythonが実行できる）
+- YouTube上の入門講座
+
+### 有料
+- Udemy の Python講座
+- Progate
+- paizaラーニング
+
+## まとめ
+
+プログラミングは、最初の一歩が一番大変です。でも、Hello Worldさえ動かせれば、もう立派なプログラマーの第一歩。
+
+AIの世界は広大ですが、Pythonという強力な武器があれば、一歩ずつ確実に進んでいけます。まずは今日、Pythonをインストールしてみましょう！

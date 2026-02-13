@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3776ab"/>
+      <stop offset="100%" style="stop-color:#ffd43b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg3)" rx="0"/>
+  <!-- Code block decoration -->
+  <rect x="100" y="150" width="500" height="300" rx="16" fill="black" opacity="0.2"/>
+  <text x="130" y="220" fill="#ffd43b" font-family="monospace" font-size="28" opacity="0.9">def hello_ai():</text>
+  <text x="130" y="265" fill="white" font-family="monospace" font-size="28" opacity="0.7">    print("Hello AI!")</text>
+  <text x="130" y="310" fill="white" font-family="monospace" font-size="28" opacity="0.7">    model.train()</text>
+  <text x="130" y="355" fill="#10b981" font-family="monospace" font-size="28" opacity="0.7">    # Let's go!</text>
+  <!-- Right side text -->
+  <text x="870" y="250" text-anchor="middle" fill="white" font-family="sans-serif" font-size="64" font-weight="bold">Python</text>
+  <text x="870" y="310" text-anchor="middle" fill="white" font-family="sans-serif" font-size="40" opacity="0.9">×</text>
+  <text x="870" y="370" text-anchor="middle" fill="white" font-family="sans-serif" font-size="64" font-weight="bold">AI入門</text>
+  <text x="870" y="440" text-anchor="middle" fill="white" font-family="sans-serif" font-size="30" opacity="0.7">完全初心者向けガイド</text>
+</svg>

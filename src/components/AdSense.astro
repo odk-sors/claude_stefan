@@ -1,0 +1,37 @@
+---
+// Google AdSense広告コンポーネント
+// AdSense審査通過後、YOUR_ADSENSE_IDを実際のIDに置き換えてください
+interface Props {
+	slot?: 'sidebar' | 'in-article' | 'bottom';
+}
+const { slot = 'in-article' } = Astro.props;
+---
+
+<div class="ad-container" data-ad-slot={slot}>
+	<!-- Google AdSense 審査通過後にコメントを外してください -->
+	<!--
+	<ins class="adsbygoogle"
+		style="display:block"
+		data-ad-client="ca-pub-YOUR_ADSENSE_ID"
+		data-ad-slot="YOUR_AD_SLOT"
+		data-ad-format="auto"
+		data-full-width-responsive="true"></ins>
+	<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+	-->
+	<div class="ad-placeholder">
+		<p>広告スペース</p>
+	</div>
+</div>
+<style>
+	.ad-container {
+		margin: 2em 0;
+		text-align: center;
+	}
+	.ad-placeholder {
+		background: rgb(var(--gray-light));
+		padding: 2em;
+		border-radius: 8px;
+		color: rgb(var(--gray));
+		font-size: 0.9em;
+	}
+</style>

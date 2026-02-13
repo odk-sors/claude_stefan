@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#a855f7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg1)" rx="0"/>
+  <!-- Icons representing tools -->
+  <g transform="translate(100, 180)" fill="white" opacity="0.15">
+    <rect width="120" height="120" rx="20"/>
+    <rect x="150" width="120" height="120" rx="20"/>
+    <rect x="300" width="120" height="120" rx="20"/>
+    <rect y="150" width="120" height="120" rx="20"/>
+    <rect x="150" y="150" width="120" height="120" rx="20"/>
+  </g>
+  <!-- Gear icon -->
+  <circle cx="950" cy="300" r="100" fill="white" opacity="0.1"/>
+  <circle cx="950" cy="300" r="60" fill="white" opacity="0.1"/>
+  <!-- Text -->
+  <text x="600" y="220" text-anchor="middle" fill="white" font-family="sans-serif" font-size="72" font-weight="bold">AI TOOLS</text>
+  <text x="600" y="310" text-anchor="middle" fill="white" font-family="sans-serif" font-size="48" opacity="0.9">2026</text>
+  <text x="600" y="420" text-anchor="middle" fill="white" font-family="sans-serif" font-size="36" opacity="0.7">無料で使える厳選10選</text>
+</svg>

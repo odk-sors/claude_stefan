@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#bg4)" rx="0"/>
+  <!-- Image frame icons -->
+  <rect x="100" y="160" width="250" height="200" rx="12" fill="white" opacity="0.15" stroke="white" stroke-width="3" stroke-opacity="0.3"/>
+  <rect x="475" y="160" width="250" height="200" rx="12" fill="white" opacity="0.15" stroke="white" stroke-width="3" stroke-opacity="0.3"/>
+  <rect x="850" y="160" width="250" height="200" rx="12" fill="white" opacity="0.15" stroke="white" stroke-width="3" stroke-opacity="0.3"/>
+  <!-- Mountain/landscape icons inside frames -->
+  <polygon points="150,330 225,240 300,330" fill="white" opacity="0.2"/>
+  <polygon points="525,330 600,250 675,330" fill="white" opacity="0.2"/>
+  <circle cx="925" cy="240" r="30" fill="white" opacity="0.2"/>
+  <polygon points="900,330 975,260 1050,330" fill="white" opacity="0.2"/>
+  <!-- Labels -->
+  <text x="225" y="400" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24" opacity="0.8">Midjourney</text>
+  <text x="600" y="400" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24" opacity="0.8">DALL-E</text>
+  <text x="975" y="400" text-anchor="middle" fill="white" font-family="sans-serif" font-size="24" opacity="0.8">Stable Diffusion</text>
+  <!-- Title -->
+  <text x="600" y="520" text-anchor="middle" fill="white" font-family="sans-serif" font-size="48" font-weight="bold">AI画像生成 比較ガイド</text>
+</svg>
