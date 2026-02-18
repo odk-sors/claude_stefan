@@ -1,6 +1,5 @@
 ---
 // Amazonアソシエイトリンクコンポーネント
-// YOUR_ASSOCIATE_IDを実際のアソシエイトIDに置き換えてください
 interface Props {
 	title: string;
 	asin: string;
@@ -8,7 +7,7 @@ interface Props {
 	imageUrl?: string;
 }
 const { title, asin, description = '', imageUrl } = Astro.props;
-const affiliateTag = 'YOUR_ASSOCIATE_ID';
+const affiliateTag = 'aitechinfo-22';
 const productUrl = `https://www.amazon.co.jp/dp/${asin}?tag=${affiliateTag}`;
 ---
 
