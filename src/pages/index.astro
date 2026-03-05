@@ -10,6 +10,7 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <!doctype html>
@@ -22,15 +23,15 @@ const posts = (await getCollection('blog')).sort(
 		<main>
 			<section class="hero">
 				<h1>AI Tech Lab</h1>
-				<p>AI・テクノロジーの最新トレンド、ツールレビュー、プログラミング入門を発信</p>
+				<p data-i18n="tagline">AI・テクノロジーの最新トレンド、ツールレビュー、プログラミング入門を発信</p>
 			</section>
 			<section class="latest-posts">
-				<h2>最新記事</h2>
+				<h2 data-i18n="latestPosts">最新記事</h2>
 				<ul>
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`${import.meta.env.BASE_URL}blog/${post.id}/`}>
+								<a href={`${base}/blog/${post.id}/`}>
 									{post.data.heroImage && (
 										<Image width={720} height={360} src={post.data.heroImage} alt="" />
 									)}

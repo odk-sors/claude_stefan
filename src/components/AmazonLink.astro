@@ -20,7 +20,7 @@ const productUrl = `https://www.amazon.co.jp/dp/${asin}?tag=${affiliateTag}`;
 	<div class="amazon-info">
 		<h4><a href={productUrl} target="_blank" rel="nofollow noopener">{title}</a></h4>
 		{description && <p>{description}</p>}
-		<a href={productUrl} target="_blank" rel="nofollow noopener" class="amazon-button">
+		<a href={productUrl} target="_blank" rel="nofollow noopener" class="amazon-button" data-i18n="amazonLink">
 			Amazonで見る
 		</a>
 	</div>

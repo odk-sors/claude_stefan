@@ -30,7 +30,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 							{
 								updatedDate && (
 									<div class="last-updated-on">
-										更新日: <FormattedDate date={updatedDate} />
+										<span data-i18n="updatedDate">更新日</span>: <FormattedDate date={updatedDate} />
 									</div>
 								)
 							}
